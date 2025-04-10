@@ -27,7 +27,7 @@ def get_product_info():
 
     for card in card_bodies:
         # Ищем название товара
-        name_tag = card.find('div', class_='product-name')
+        name_tag = card.find('a', class_='product-name')
         name = name_tag.text.strip() if name_tag else 'Не указано'
 
         # Ищем ссылку на картинку товара
